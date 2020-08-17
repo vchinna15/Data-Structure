@@ -56,7 +56,9 @@ Find if the given array contains duplicate values: there are two approaches.
  
  Selection SOrt: We check each cell of a array to see which value is least and store the index into a variable-lowestValueIndex. Once we reach the end of teharray, we swap the value at the location of lowest index with the first element of the array. In the second passthrough, we check each cell starting from index 1 and find the lowest value index and swap. In the third passthrough, index 2 with lowest index value and son on. 
  
- if N=4; there will be 3+2+1=6 comparisons. and only 3 swaps(one for each passthrough) for worst case scenario(in case of bubble sort, it will be 6 passthrough). Even though, O(N squared), it is faster than Bubble sort.
+ if N=4; there will be 3+2+1=6 comparisons. and only 3 swaps(one for each passthrough) for worst case scenario(in case of bubble sort, it will be 6 passthrough). Even though, O(N squared), it is faster than Bubble sort, even though both are O(N squared) as per Big O Notation.
+ 
+ For N=80, Buble sort has 6320 steps. but selection sort has 3239 steps(3160 Comparisons + 79 Swaps)
  
  In Big-O notation, O(n squared/2) = O(N squared); O(100N) = O(N); O(N/2) = O(N)
  
