@@ -52,5 +52,5 @@ Some other examples  of quadratic problem:
 Find if the given array contains duplicate values: there are two approaches. 
   1. Quadratic Solution: First approach we can use two nested FOR loops and compare every element with other element. this is N squared steps
   2. Linear Solution: Second approach, in a single FOR loop, keep track of 'which number it has already encountered' using an array called existingNumnbers[]. Every time the code encounters a new number, it stores i in the index of existingNumbers corresponding to the value of the number. If the array is [3,2,7], existingNumbers[]=[ ,1,1,1, , , ,1]
- 
+ 3. Linear Solution: in a single for loop, add each data into a HashSet. if the add() method of HashSet returns false, thta means, the rdatais a duplicate. Time complexity is O(N), as adding a value to HashSet is one step O(1) and FOR loop takes O(N) steps.
  
