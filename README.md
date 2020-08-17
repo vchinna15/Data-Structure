@@ -18,3 +18,28 @@ Set  is an array with one restriction, that is, set should not have duplicate va
 
 Algorithm is how you perform a particular operation. We can use mulitiple algorithm to a aprticular operation. For example, in an Ordered Array Data structure(in normal array, we add a new data at the end which is the best case, but, in ordered array we add a new data in a appropriate plaxce based on the order(natural order) of the data. So we need to search to find the appropriate place in the array and then move all the data one cell towards right to create a space for new data and inserts the new data). We can use multiple algorithm to search ordered array, one is Linear Search and another one is Binary Search. Please note that we can't do binary search in normal array. =3.Linear search of 10,000 data takes 10,000 steps. Binary search of 10,000 dara takes only 13 steps. Binary search alogorithm increases one step when the data doubles. That means, O(log n). Logarithm is theh inverse of exponents. Exponent is like 2 power 3 which is equal to 2*2*2=8. Now log2(8)=3. Log2(64)=6.
 If N=1024, O(N) =1024 and O(log N) = 10.
+
+Sort an array of unordered numbers into ascending order:
+Bubble Sort - is a simple, basic sort alogrithm. 
+Initially, thw whole array is unsorted. 
+ 1. Compare first two elements(use two pointers), 
+ 2. if left>right, swap left with right
+ 3. move the pointers once cell to the right
+ Continue 1 to 3 until end of the array. This is called one pass through. At the end of this pass through, the last element will be sorted(the highes value).
+ Now the array which is left of the last element is unsorted.
+ Repeat step 1 to 4. This time last but one element and the last element will be sorted. remaining array on the left is unsorted.
+ Repeat step 1 to 4 for  n-1 time, where n is the length of the array
+ 
+ 4 3 2 1
+ First pass through
+ 3421
+ 3241
+ 3214
+ second passthrough on 321
+ 231
+ 213
+ third passthrough on 21
+ 12
+ final output = 1234
+ 
+ 
