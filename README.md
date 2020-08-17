@@ -54,6 +54,10 @@ Find if the given array contains duplicate values: there are two approaches.
   2. Linear Solution: Second approach, in a single FOR loop, keep track of 'which number it has already encountered' using an array called existingNumnbers[]. Every time the code encounters a new number, it stores i in the index of existingNumbers corresponding to the value of the number. If the array is [3,2,7], existingNumbers[]=[ ,1,1,1, , , ,1]
  3. Linear Solution: in a single for loop, add each data into a HashSet. if the add() method of HashSet returns false, thta means, the rdatais a duplicate. Time complexity is O(N), as adding a value to HashSet is one step O(1) and FOR loop takes O(N) steps.
  
+ Selection SOrt: We check each cell of a array to see which value is least and store the index into a variable-lowestValueIndex. Once we reach the end of teharray, we swap the value at the location of lowest index with the first element of the array. In the second passthrough, we check each cell starting from index 1 and find the lowest value index and swap. In the third passthrough, index 2 with lowest index value and son on. 
+ 
+ if N=4; there will be 3+2+1=6 comparisons. and only 3 swaps(one for each passthrough) for worst case scenario(in case of bubble sort, it will be 6 passthrough). Even though, O(N squared), it is faster than Bubble sort.
+ 
  In Big-O notation, O(n squared/2) = O(N squared); O(100N) = O(N); O(N/2) = O(N)
  
  
