@@ -42,4 +42,15 @@ Initially, thw whole array is unsorted.
  12
  final output = 1234
  
+ the complexity is O(N squared). it is quadratic time.
+ There are 2 thigs happening in the algorithm:
+ 1. Comparison of two elements (3+2+1=6 steps)
+ 2. Swaps (in worst case scenario where the array is in descending order, the total swaps are same as comparisons. in this case, 6)
+ if n=4, total steps are 12; approximately N squared which is 16.
+
+Some other examples  of quadratic problem:
+Find if the given array contains duplicate values: there are two approaches. 
+  1. Quadratic Solution: First approach we can use two nested FOR loops and compare every element with other element. this is N squared steps
+  2. Linear Solution: Second approach, in a single FOR loop, keep track of 'which number it has already encountered' using an array called existingNumnbers[]. Every time the code encounters a new number, it stores i in the index of existingNumbers corresponding to the value of the number. If the array is [3,2,7], existingNumbers[]=[ ,1,1,1, , , ,1]
+ 
  
